@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto de Computação</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Dados Básicos</legend>
+        Nome <input type="text" name="nome" id="nome" ><br>
+        Email <input type="email" name="email" id="email" placeholder="seunome@dominio.com.br"><br>
+        Website <input type="text" name="web" id="web" value="http://">
+    </fieldset>
+
+    <fieldset>
+        <legend>Seu curso no Instituto de Computação</legend>
+        <input type="radio" name="curso" id="cc">
+        <label for="cc">Ciência da Computação<br></label>
+
+        <input type="radio" name="curso" id="si">
+        <label for="si">Sistemas de Informação<br></label>
+
+        <input type="radio" name="curso" id="ec">
+        <label for="ec">Engenharia da Computação<br></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Assinale as linguagens já usadas por você:</legend>
+
+        <input type="checkbox" name="ling" id="java">
+        <label for="java">Java</label>
+
+        <input type="checkbox" name="ling" id="c">
+        <label for="c">C</label>
+
+        <input type="checkbox" name="ling" id="cpp">
+        <label for="cpp">C++</label>
+
+        <input type="checkbox" name="ling" id="perl">
+        <label for="perl">Perl</label>
+
+        <input type="checkbox" name="ling" id="python">
+        <label for="python">Python</label>
+
+        <input type="checkbox" name="ling" id="js">
+        <label for="js">Javascript</label>
+
+    </fieldset>
+
+    <fieldset>
+        Cor favorita <input type="color" name="color" id="color"><br>
+        Data de nascimento <input type="date" name="date" id="date"><br>
+        Ano de entrada em seu curso do Icomp <input type="number" name="ano" id="ano"><br>
+        Nota para este site <input type="range" name="range" id="range">
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Área de atuação</legend>
+        <select name="area" id="area">
+            <option value="1">Banco de Dados</option>
+            <option value="2">Educação a Distância</option>
+            <option value="3">Engenharia de Software</option>
+            <option value="4">Otimização</option>
+            <option value="5">Programação Web</option>
+            <option value="6">Recuperação de Informação</option> 
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Submeta seu Currículo</legend>
+        <input type="file" name="curriculo" id="curriculo">
+    </fieldset>
+
+    <fieldset>
+        <legend>Escreva sua mensagem</legend>
+        <textarea name="mensagem" rows="4" cols="50">
+Qual sua motivação para cursar Computação?
+        </textarea>
+    </fieldset>
+    
+</body>
+</html>
