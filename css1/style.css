@@ -1,0 +1,12 @@
+#paragraph{
+    border: 15px black solid;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 70px;
+    background: rgb(214, 214, 214);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
