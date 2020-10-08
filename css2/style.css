@@ -1,0 +1,27 @@
+#container{
+    position: absolute;
+    background-color: rgba(219, 166, 141, 0.76);
+    left: 110px;
+    top: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 2em;
+    color: black;
+    border: 10px solid rgb(146, 71, 36);
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    align-content: center;
+    border-radius: 20%;
+
+}
+
+body{
+    background-image: url(petra.jpg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: rgb(198, 236, 241);
+    background-size: 1800px 950px;
+}
+
