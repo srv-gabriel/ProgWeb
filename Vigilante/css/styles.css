@@ -1,0 +1,49 @@
+.reserva {
+	background-image: url('assets/reserva.png');
+	position: absolute;
+	left: 0;
+	top: 70px;
+	z-index: 1;
+	margin-left: 18%; 
+	margin-top: 1px;
+}
+
+#pontuacao{
+	position: absolute;
+	right: 205px;
+	top: 0px;
+	margin-left: 18%;
+	font-size: 45px;
+	font-family: Courier
+
+}
+
+.fogo {
+	background-image: url('assets/foco.gif');
+	position: absolute;
+	z-index: 2;
+}
+
+.caveiras{
+	background-image: url('assets/caveira.gif');
+	position: absolute;
+	z-index: 3;
+}
+
+.caveiraArrasadora{
+	transform: scale(1.5);
+	position: absolute;
+}
+
+.vidas {
+	background-image: url('assets/arvore.png');
+	width: 100px;
+	height: 54px;
+	margin-left: 9%;
+	margin-top: 5%
+	display: inline-block;
+}
+
+
+
+
