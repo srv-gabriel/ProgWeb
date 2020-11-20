@@ -30,8 +30,8 @@
 	z-index: 3;
 }
 
-.caveiraArrasadora{
-	transform: scale(1.5);
+.devastacao_caveira{
+	transform: scale(1.2);
 	position: absolute;
 }
 

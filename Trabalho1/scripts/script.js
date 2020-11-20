@@ -7,7 +7,7 @@
   let dimensao_fogo = [100, 130];
   let dimensao_caveira = [120,136];
   let dimensao_queimada = [250,250];
-  let dimensao_placar = [300,900]
+  let dimensao_placar = [300, 900]
 
   // probabilidades do fogo e da caveira aparecerem
   let probabilidade_fogo = 60;
@@ -41,6 +41,29 @@
     }
   }
 
+  class Vidas {
+
+    constructor () {
+      for(let i = 0; i < 5; i++){
+        let set_vidas = document.createElement("div");
+        set_vidas.className = "vidas";
+        document.body.appendChild(set_vidas);
+        vidasAux.push(set_vidas);
+      }
+    }
+
+    // Diminui 1 da vida do jogador
+    perde_vida(qtd) {
+      var aux = qtd;
+
+      while (aux > 0 && vidasAux.length > 0) {
+        let lifeRemove = vidasAux.pop();
+        document.body.removeChild(lifeRemove);
+        aux -= 1;
+      }
+    }
+  }
+
   class Fogo {
 
     constructor() {
@@ -65,7 +88,7 @@
 
       setTimeout(() => {
         if (this.element != null) {
-          this.element.style.backgroundImage = "url(../Vigilante/css/assets/devastacao.png)";
+          this.element.style.backgroundImage = "url(../Trabalho1/css/assets/devastacao.png)";
           this.element.style.width = `${dimensao_queimada[0]}px`;
           this.element.style.height = `${dimensao_queimada[1]}px`;
           this.element.style.left = `${pos_left - 70}px`
@@ -100,7 +123,7 @@
 
       setTimeout(() => {
         if (this.element != null) {
-          this.element.style.backgroundImage = "url(../Vigilante/css/assets/devastacao.png)";
+          this.element.style.backgroundImage = "url(../Trabalho1/css/assets/devastacao.png)";
           this.element.style.width = `${dimensao_queimada[0]}px`;
           this.element.style.height = `${dimensao_queimada[1]}px`;
           this.element.style.left = `${pos_left - 70}px`
@@ -109,29 +132,6 @@
           this.element.onmouseup = null;
         }
       }, 2000 / FPS);
-    }
-  }
-
-  class Vidas {
-
-    constructor () {
-      for(let i = 0; i < 5; i++){
-        let set_vidas = document.createElement("div");
-        set_vidas.className = "vidas";
-        document.body.appendChild(set_vidas);
-        vidasAux.push(set_vidas);
-      }
-    }
-
-    // Diminui 1 da vida do jogador
-    perde_vida(qtd) {
-      var aux = qtd;
-
-      while (aux > 0 && vidasAux.length > 0) {
-        let lifeRemove = vidasAux.pop();
-        document.body.removeChild(lifeRemove);
-        aux -= 1;
-      }
     }
   }
 
